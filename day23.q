@@ -20,4 +20,7 @@ get_index:{
    ]
  }
 
-1 _ string 10 sv (res?1) rotate res:h/[5 6 2 8 9 3 1 4 7;til[100] mod 9]
+res:1 _ string 10 sv (res?1) rotate res:h/[5 6 2 8 9 3 1 4 7;til[100] mod 9]
+-1 "The answer for part 1 is: ",.Q.s1[res];
+
+/ part 2

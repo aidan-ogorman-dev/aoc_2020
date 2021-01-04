@@ -12,4 +12,7 @@ combat:{
    ]
  }
 
-sum raze[combat/[{all 0 < count each x};d]] * reverse 1+til sum count each d
+res:sum raze[combat/[{all 0 < count each x};d]] * reverse 1+til sum count each d
+-1 "The answer for part 1 is: ",.Q.s1[res];
+
+/ part 2

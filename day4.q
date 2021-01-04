@@ -4,7 +4,8 @@ t:read0`:day4.txt
 / part 1
 tags:`byr`iyr`eyr`hgt`hcl`ecl`pid`cid!()
 d:(!) ./: ("S: ")0:/: trim " "sv/: (0,where t ~\: "") cut t
-count d:d where all each (key[tags] except `cid) in/: key each d
+res:count d:d where all each (key[tags] except `cid) in/: key each d
+-1 "The answer for part 1 is: ",.Q.s1[res];
 
 / part 2
 tbl:0#enlist tags;
@@ -20,4 +21,5 @@ delete from `tbl where not (hcl like "#[0-f][0-f][0-f][0-f][0-f][0-f]");
 delete from `tbl where not (`$ecl) in `amb`blu`brn`gry`grn`hzl`oth;
 delete from `tbl where not pid like "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]";
 
-count tbl
+res2:count tbl;
+-1 "The answer for part 2 is: ",.Q.s1[res2];

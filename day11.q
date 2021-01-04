@@ -6,7 +6,8 @@ f:{(.[y;x]; "L") 3 < sum (y ./: x +/: (-1 0 1 cross -1 0 1) _ 4) = "#"}
 h:{if[.[y;x] ~ "."; :"."]; (.[y;x]; "#") 0 = sum (y ./: x+/: (-1 0 1 cross -1 0 1) _ 4) = "#"}
 
 r:{[mat] show res:count[mat] cut ((h[;mat];f[;mat]) raze[mat] = "#") @' til[count mat] cross til count mat; res}/[grid]
-sum raze[r]="#"
+res:sum raze[r]="#"
+-1 "The answer for part 1 is: ",.Q.s1[res];
 
 /
 / part 2
