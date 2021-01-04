@@ -23,4 +23,7 @@ check_tile:{
 
 get_lines:{raze ((::);reverse)@\:/: (first;last)@\: x}
 
-get_corners[tile_numbers; ts]
+res:get_corners[tile_numbers; ts]
+-1 "The answer for part 1 is: ",.Q.s1[res];
+
+/ part 2

@@ -17,4 +17,5 @@ calc_position:{[d;a;m]
  ]
  }
 
-sum abs first calc_position/[(0 0;1);actions;mag]
+res:sum abs first calc_position/[(0 0;1);actions;mag]
+-1 "The answer for part 1 is: ",.Q.s1[res];

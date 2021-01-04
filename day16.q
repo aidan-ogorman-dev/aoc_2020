@@ -10,7 +10,8 @@ calc_error_rate:{[t]
   ntix_nums:"I"$/: "," vs/: 2 _ ntix;
   num_win_range:not each any each flip ntix_nums within\:/: ranges;
   err:sum raze ntix_nums @' where each num_win_range;
-  -1 "Ticket scanning error rate is: ",string err;
+  :err
  };
 
-calc_error_rate[tix]
+res:calc_error_rate[tix]
+-1 "The answer for part 1 is: ",.Q.s1[res];

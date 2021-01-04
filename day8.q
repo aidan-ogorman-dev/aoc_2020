@@ -13,6 +13,6 @@ calc_position:{[pos]
  }
 
 calc_position[0];
--1 "The resultant position is: ",string .ao.acc;
+-1 "The answer for part 1 is: ",.Q.s1[.ao.acc];
 
 / part 2

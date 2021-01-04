@@ -14,4 +14,5 @@ run_bitmask:{[i]
  }
 
 run_bitmask each is;
-sum 2 sv/: .ao.bitmask
+res:sum 2 sv/: .ao.bitmask
+-1 "The answer for part 1 is: ",.Q.s1[res];
